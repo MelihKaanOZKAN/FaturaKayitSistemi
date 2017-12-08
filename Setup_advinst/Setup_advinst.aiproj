@@ -1,0 +1,110 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">All</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>106e7710-ad28-43d5-ab05-3e0d8abc76ab</ProjectGuid>
+    <OutputType>msi</OutputType>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>Setup_advinst.aip</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <IsWindowsApplication>True</IsWindowsApplication>
+    <AssemblyName>Setup_advinst</AssemblyName>
+    <Name>Setup_advinst</Name>
+    <RootNamespace>Setup_advinst</RootNamespace>
+    <ImportedProject>{126d262e-8c64-4bcf-96c1-7d852b303acb}</ImportedProject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'All' ">
+    <DebugSymbols>false</DebugSymbols>
+    <EnableUnmanagedDebugging>true</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' " />
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' " />
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' " />
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' " />
+  <PropertyGroup Condition=" '$(Configuration)' == 'All' " />
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' " />
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' " />
+  <PropertyGroup Condition=" '$(Configuration)' == 'All' " />
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' " />
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' " />
+  <PropertyGroup Condition=" '$(Configuration)' == 'All' " />
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' " />
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' " />
+  <PropertyGroup Condition=" '$(Configuration)' == 'All' " />
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' " />
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' " />
+  <PropertyGroup Condition=" '$(Configuration)' == 'All' " />
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' " />
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' " />
+  <PropertyGroup Condition=" '$(Configuration)' == 'All' " />
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' " />
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' " />
+  <PropertyGroup Condition=" '$(Configuration)' == 'All' " />
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' " />
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' " />
+  <PropertyGroup Condition=" '$(Configuration)' == 'All' " />
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' " />
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' " />
+  <PropertyGroup Condition=" '$(Configuration)' == 'All' " />
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' " />
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' " />
+  <PropertyGroup Condition=" '$(Configuration)' == 'All' " />
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' " />
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' " />
+  <PropertyGroup Condition=" '$(Configuration)' == 'All' " />
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' " />
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' " />
+  <PropertyGroup Condition=" '$(Configuration)' == 'All' " />
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' " />
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' " />
+  <PropertyGroup Condition=" '$(Configuration)' == 'All' " />
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' " />
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' " />
+  <PropertyGroup Condition=" '$(Configuration)' == 'All' " />
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' " />
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' " />
+  <PropertyGroup Condition=" '$(Configuration)' == 'All' " />
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' " />
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' " />
+  <PropertyGroup Condition=" '$(Configuration)' == 'All' " />
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' " />
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' " />
+  <PropertyGroup Condition=" '$(Configuration)' == 'All' " />
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' " />
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' " />
+  <PropertyGroup Condition=" '$(Configuration)' == 'All' " />
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' " />
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' " />
+  <PropertyGroup Condition=" '$(Configuration)' == 'All' " />
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' " />
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' " />
+  <PropertyGroup Condition=" '$(Configuration)' == 'All' " />
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' " />
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' " />
+  <PropertyGroup Condition=" '$(Configuration)' == 'All' " />
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' " />
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' " />
+  <PropertyGroup Condition=" '$(Configuration)' == 'All' " />
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' " />
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' " />
+  <PropertyGroup Condition=" '$(Configuration)' == 'All' " />
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' " />
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' " />
+  <PropertyGroup Condition=" '$(Configuration)' == 'All' " />
+  <ItemGroup>
+    <Compile Include="Setup_advinst.aip">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Fatura Kayıt Sistemi\Kayıt Otomasyonu.csproj">
+      <Name>Kayıt Otomasyonu</Name>
+      <Project>{129e7155-a2ea-41f6-a8a5-77d187c5f4d2}</Project>
+      <Private>True</Private>
+      <OutputsToImport>PrimaryOutput</OutputsToImport>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Caphyon\Advanced Installer\AdvInstExtTasks.Targets" />
+</Project>

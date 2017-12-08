@@ -1,0 +1,261 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet4Payment" targetNamespace="http://tempuri.org/DataSet4Payment.xsd" xmlns:mstns="http://tempuri.org/DataSet4Payment.xsd" xmlns="http://tempuri.org/DataSet4Payment.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="DBKayitOtomasyonuConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="DBKayitOtomasyonuConnectionString1 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Fatura_Kayıt_Sistemi.Properties.Settings.GlobalReference.Default.DBKayitOtomasyonuConnectionString1" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="BillsTableAdapter" GeneratorDataComponentClassName="BillsTableAdapter" Name="Bills" UserDataComponentName="BillsTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="DBKayitOtomasyonuConnectionString1 (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>Select  [BillId] as 'Fatura Nu', 
+                 SubType as 'Fatura Türü',  
+             Bls.[SchoolId] as 'Okul Nu', 
+             [SchoolName] as 'Okul Adı', 
+             ScT.[SchoolType] as 'Okul Türü',  
+             [BillDate] as 'Fatura Tarihi', 
+              [BillConsumption] as 'Tüketim Miktarı', 
+              [BillAmount] as 'Fatura Tutarı', 
+              [BillTax] as 'Katma Değer Vergisi', 
+              [BillStatus] as 'Fatura Ödeme Durumu',
+              [PaymentId] as 'Ödeme Numarası'
+               FROM [dbo].[Bills] Bls  
+             inner join [dbo].[SchoolInfo] SI on SI.[SchoolId] = Bls.[SchoolId] 
+             inner join [dbo].[SubTypebyID] STI on Bls.[BillTypeId] = STI.[SubId] 
+             inner join [dbo].[SchoolTypebyID] ScT on ScT.[SchoolTypeId] = SI.[SchoolType]</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText />
+                    <Parameters />
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Fatura Nu" DataSetColumn="Fatura Nu" />
+              <Mapping SourceColumn="Fatura Türü" DataSetColumn="Fatura Türü" />
+              <Mapping SourceColumn="Okul Nu" DataSetColumn="Okul Nu" />
+              <Mapping SourceColumn="Okul Adı" DataSetColumn="Okul Adı" />
+              <Mapping SourceColumn="Okul Türü" DataSetColumn="Okul Türü" />
+              <Mapping SourceColumn="Fatura Tarihi" DataSetColumn="Fatura Tarihi" />
+              <Mapping SourceColumn="Tüketim Miktarı" DataSetColumn="Tüketim Miktarı" />
+              <Mapping SourceColumn="Fatura Tutarı" DataSetColumn="Fatura Tutarı" />
+              <Mapping SourceColumn="Katma Değer Vergisi" DataSetColumn="Katma Değer Vergisi" />
+              <Mapping SourceColumn="Fatura Ödeme Durumu" DataSetColumn="Fatura Ödeme Durumu" />
+              <Mapping SourceColumn="Ödeme Numarası" DataSetColumn="Ödeme Numarası" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="DBKayitOtomasyonuConnectionString1 (Settings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="UpdateBillQuery" Modifier="Public" Name="UpdateBillQuery" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="UpdateBillQuery">
+                <UpdateCommand>
+                  <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                    <CommandText>dbo.UpdateQuery</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@paramSchoolId" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@paramBillTypeId" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="date" DbType="Date" Direction="Input" ParameterName="@paramBillDate" Precision="10" ProviderType="Date" Scale="0" Size="3" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@paramBillConsumption" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="decimal" DbType="Decimal" Direction="Input" ParameterName="@paramBillAmount" Precision="18" ProviderType="Decimal" Scale="2" Size="9" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="decimal" DbType="Decimal" Direction="Input" ParameterName="@paramBillTax" Precision="18" ProviderType="Decimal" Scale="2" Size="9" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="bit" DbType="Boolean" Direction="Input" ParameterName="@paramBillStatus" Precision="1" ProviderType="Bit" Scale="0" Size="1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="varbinary" DbType="Binary" Direction="Input" ParameterName="@paramBillImage" Precision="0" ProviderType="VarBinary" Scale="0" Size="2147483647" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@paramBillId" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="date" DbType="Date" Direction="Input" ParameterName="@paramBillOldDate" Precision="10" ProviderType="Date" Scale="0" Size="3" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@paramOldSchoolId" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="PaymentsTableAdapter" GeneratorDataComponentClassName="PaymentsTableAdapter" Name="Payments" UserDataComponentName="PaymentsTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="DBKayitOtomasyonuConnectionString1 (Settings)" DbObjectName="DBKayitOtomasyonu.dbo.Payments" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>DELETE FROM [dbo].[Payments] WHERE (([PaymentId] = @Original_PaymentId) AND ((@IsNull_SubTypeId = 1 AND [SubTypeId] IS NULL) OR ([SubTypeId] = @Original_SubTypeId)) AND ((@IsNull_PaymentDate = 1 AND [PaymentDate] IS NULL) OR ([PaymentDate] = @Original_PaymentDate)) AND ((@IsNull_PaymentConfirmDate = 1 AND [PaymentConfirmDate] IS NULL) OR ([PaymentConfirmDate] = @Original_PaymentConfirmDate)) AND ((@IsNull_PaymentAmount = 1 AND [PaymentAmount] IS NULL) OR ([PaymentAmount] = @Original_PaymentAmount)) AND ((@IsNull_PaymentTax = 1 AND [PaymentTax] IS NULL) OR ([PaymentTax] = @Original_PaymentTax)) AND ((@IsNull_PaymentConsumption = 1 AND [PaymentConsumption] IS NULL) OR ([PaymentConsumption] = @Original_PaymentConsumption)) AND ((@IsNull_PaymentConfirmPerson = 1 AND [PaymentConfirmPerson] IS NULL) OR ([PaymentConfirmPerson] = @Original_PaymentConfirmPerson)) AND ((@IsNull_PaymentStatus = 1 AND [PaymentStatus] IS NULL) OR ([PaymentStatus] = @Original_PaymentStatus)) AND ((@IsNull_OrderOfPaymentNumber = 1 AND [OrderOfPaymentNumber] IS NULL) OR ([OrderOfPaymentNumber] = @Original_OrderOfPaymentNumber)) AND ((@IsNull_OrderOfPaymentConfirmDate = 1 AND [OrderOfPaymentConfirmDate] IS NULL) OR ([OrderOfPaymentConfirmDate] = @Original_OrderOfPaymentConfirmDate)))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@Original_PaymentId" Precision="38" ProviderType="Decimal" Scale="0" Size="0" SourceColumn="PaymentId" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_SubTypeId" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="SubTypeId" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_SubTypeId" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="SubTypeId" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_PaymentDate" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="PaymentDate" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@Original_PaymentDate" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="PaymentDate" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_PaymentConfirmDate" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="PaymentConfirmDate" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@Original_PaymentConfirmDate" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="PaymentConfirmDate" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_PaymentAmount" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="PaymentAmount" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@Original_PaymentAmount" Precision="18" ProviderType="Decimal" Scale="2" Size="0" SourceColumn="PaymentAmount" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_PaymentTax" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="PaymentTax" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@Original_PaymentTax" Precision="18" ProviderType="Decimal" Scale="2" Size="0" SourceColumn="PaymentTax" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_PaymentConsumption" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="PaymentConsumption" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@Original_PaymentConsumption" Precision="18" ProviderType="Decimal" Scale="2" Size="0" SourceColumn="PaymentConsumption" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_PaymentConfirmPerson" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="PaymentConfirmPerson" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_PaymentConfirmPerson" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="PaymentConfirmPerson" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_PaymentStatus" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="PaymentStatus" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_PaymentStatus" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="PaymentStatus" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_OrderOfPaymentNumber" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="OrderOfPaymentNumber" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@Original_OrderOfPaymentNumber" Precision="38" ProviderType="Decimal" Scale="0" Size="0" SourceColumn="OrderOfPaymentNumber" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_OrderOfPaymentConfirmDate" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="OrderOfPaymentConfirmDate" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@Original_OrderOfPaymentConfirmDate" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="OrderOfPaymentConfirmDate" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [dbo].[Payments] ([SubTypeId], [PaymentDate], [PaymentConfirmDate], [PaymentAmount], [PaymentTax], [PaymentConsumption], [PaymentConfirmPerson], [PaymentStatus], [OrderOfPaymentNumber], [OrderOfPaymentConfirmDate]) VALUES (@SubTypeId, @PaymentDate, @PaymentConfirmDate, @PaymentAmount, @PaymentTax, @PaymentConsumption, @PaymentConfirmPerson, @PaymentStatus, @OrderOfPaymentNumber, @OrderOfPaymentConfirmDate);
+SELECT PaymentId, SubTypeId, PaymentDate, PaymentConfirmDate, PaymentAmount, PaymentTax, PaymentConsumption, PaymentConfirmPerson, PaymentStatus, OrderOfPaymentNumber, OrderOfPaymentConfirmDate FROM Payments WHERE (PaymentId = SCOPE_IDENTITY())</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@SubTypeId" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="SubTypeId" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@PaymentDate" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="PaymentDate" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@PaymentConfirmDate" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="PaymentConfirmDate" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@PaymentAmount" Precision="18" ProviderType="Decimal" Scale="2" Size="0" SourceColumn="PaymentAmount" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@PaymentTax" Precision="18" ProviderType="Decimal" Scale="2" Size="0" SourceColumn="PaymentTax" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@PaymentConsumption" Precision="18" ProviderType="Decimal" Scale="2" Size="0" SourceColumn="PaymentConsumption" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@PaymentConfirmPerson" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="PaymentConfirmPerson" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@PaymentStatus" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="PaymentStatus" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@OrderOfPaymentNumber" Precision="38" ProviderType="Decimal" Scale="0" Size="0" SourceColumn="OrderOfPaymentNumber" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@OrderOfPaymentConfirmDate" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="OrderOfPaymentConfirmDate" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT PaymentId, SubTypeId, PaymentDate, PaymentConfirmDate, PaymentAmount, PaymentTax, PaymentConsumption, PaymentConfirmPerson, PaymentStatus, OrderOfPaymentNumber, OrderOfPaymentConfirmDate FROM dbo.Payments</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>UPDATE [dbo].[Payments] SET [SubTypeId] = @SubTypeId, [PaymentDate] = @PaymentDate, [PaymentConfirmDate] = @PaymentConfirmDate, [PaymentAmount] = @PaymentAmount, [PaymentTax] = @PaymentTax, [PaymentConsumption] = @PaymentConsumption, [PaymentConfirmPerson] = @PaymentConfirmPerson, [PaymentStatus] = @PaymentStatus, [OrderOfPaymentNumber] = @OrderOfPaymentNumber, [OrderOfPaymentConfirmDate] = @OrderOfPaymentConfirmDate WHERE (([PaymentId] = @Original_PaymentId) AND ((@IsNull_SubTypeId = 1 AND [SubTypeId] IS NULL) OR ([SubTypeId] = @Original_SubTypeId)) AND ((@IsNull_PaymentDate = 1 AND [PaymentDate] IS NULL) OR ([PaymentDate] = @Original_PaymentDate)) AND ((@IsNull_PaymentConfirmDate = 1 AND [PaymentConfirmDate] IS NULL) OR ([PaymentConfirmDate] = @Original_PaymentConfirmDate)) AND ((@IsNull_PaymentAmount = 1 AND [PaymentAmount] IS NULL) OR ([PaymentAmount] = @Original_PaymentAmount)) AND ((@IsNull_PaymentTax = 1 AND [PaymentTax] IS NULL) OR ([PaymentTax] = @Original_PaymentTax)) AND ((@IsNull_PaymentConsumption = 1 AND [PaymentConsumption] IS NULL) OR ([PaymentConsumption] = @Original_PaymentConsumption)) AND ((@IsNull_PaymentConfirmPerson = 1 AND [PaymentConfirmPerson] IS NULL) OR ([PaymentConfirmPerson] = @Original_PaymentConfirmPerson)) AND ((@IsNull_PaymentStatus = 1 AND [PaymentStatus] IS NULL) OR ([PaymentStatus] = @Original_PaymentStatus)) AND ((@IsNull_OrderOfPaymentNumber = 1 AND [OrderOfPaymentNumber] IS NULL) OR ([OrderOfPaymentNumber] = @Original_OrderOfPaymentNumber)) AND ((@IsNull_OrderOfPaymentConfirmDate = 1 AND [OrderOfPaymentConfirmDate] IS NULL) OR ([OrderOfPaymentConfirmDate] = @Original_OrderOfPaymentConfirmDate)));
+SELECT PaymentId, SubTypeId, PaymentDate, PaymentConfirmDate, PaymentAmount, PaymentTax, PaymentConsumption, PaymentConfirmPerson, PaymentStatus, OrderOfPaymentNumber, OrderOfPaymentConfirmDate FROM Payments WHERE (PaymentId = @PaymentId)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@SubTypeId" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="SubTypeId" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@PaymentDate" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="PaymentDate" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@PaymentConfirmDate" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="PaymentConfirmDate" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@PaymentAmount" Precision="18" ProviderType="Decimal" Scale="2" Size="0" SourceColumn="PaymentAmount" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@PaymentTax" Precision="18" ProviderType="Decimal" Scale="2" Size="0" SourceColumn="PaymentTax" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@PaymentConsumption" Precision="18" ProviderType="Decimal" Scale="2" Size="0" SourceColumn="PaymentConsumption" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@PaymentConfirmPerson" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="PaymentConfirmPerson" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@PaymentStatus" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="PaymentStatus" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@OrderOfPaymentNumber" Precision="38" ProviderType="Decimal" Scale="0" Size="0" SourceColumn="OrderOfPaymentNumber" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@OrderOfPaymentConfirmDate" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="OrderOfPaymentConfirmDate" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@Original_PaymentId" Precision="38" ProviderType="Decimal" Scale="0" Size="0" SourceColumn="PaymentId" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_SubTypeId" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="SubTypeId" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_SubTypeId" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="SubTypeId" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_PaymentDate" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="PaymentDate" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@Original_PaymentDate" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="PaymentDate" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_PaymentConfirmDate" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="PaymentConfirmDate" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@Original_PaymentConfirmDate" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="PaymentConfirmDate" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_PaymentAmount" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="PaymentAmount" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@Original_PaymentAmount" Precision="18" ProviderType="Decimal" Scale="2" Size="0" SourceColumn="PaymentAmount" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_PaymentTax" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="PaymentTax" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@Original_PaymentTax" Precision="18" ProviderType="Decimal" Scale="2" Size="0" SourceColumn="PaymentTax" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_PaymentConsumption" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="PaymentConsumption" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@Original_PaymentConsumption" Precision="18" ProviderType="Decimal" Scale="2" Size="0" SourceColumn="PaymentConsumption" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_PaymentConfirmPerson" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="PaymentConfirmPerson" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_PaymentConfirmPerson" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="PaymentConfirmPerson" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_PaymentStatus" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="PaymentStatus" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_PaymentStatus" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="PaymentStatus" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_OrderOfPaymentNumber" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="OrderOfPaymentNumber" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@Original_OrderOfPaymentNumber" Precision="38" ProviderType="Decimal" Scale="0" Size="0" SourceColumn="OrderOfPaymentNumber" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_OrderOfPaymentConfirmDate" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="OrderOfPaymentConfirmDate" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@Original_OrderOfPaymentConfirmDate" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="OrderOfPaymentConfirmDate" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="PaymentId" ColumnName="PaymentId" DataSourceName="DBKayitOtomasyonu.dbo.Payments" DataTypeServer="decimal" DbType="Decimal" Direction="Input" ParameterName="@PaymentId" Precision="38" ProviderType="Decimal" Scale="0" Size="17" SourceColumn="PaymentId" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="PaymentId" DataSetColumn="PaymentId" />
+              <Mapping SourceColumn="SubTypeId" DataSetColumn="SubTypeId" />
+              <Mapping SourceColumn="PaymentDate" DataSetColumn="PaymentDate" />
+              <Mapping SourceColumn="PaymentConfirmDate" DataSetColumn="PaymentConfirmDate" />
+              <Mapping SourceColumn="PaymentAmount" DataSetColumn="PaymentAmount" />
+              <Mapping SourceColumn="PaymentTax" DataSetColumn="PaymentTax" />
+              <Mapping SourceColumn="PaymentConsumption" DataSetColumn="PaymentConsumption" />
+              <Mapping SourceColumn="PaymentConfirmPerson" DataSetColumn="PaymentConfirmPerson" />
+              <Mapping SourceColumn="OrderOfPaymentNumber" DataSetColumn="OrderOfPaymentNumber" />
+              <Mapping SourceColumn="OrderOfPaymentConfirmDate" DataSetColumn="OrderOfPaymentConfirmDate" />
+              <Mapping SourceColumn="PaymentStatus" DataSetColumn="PaymentStatus" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet4Payment" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSet4Payment" msprop:Generator_UserDSName="DataSet4Payment">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Bills" msprop:Generator_TableClassName="BillsDataTable" msprop:Generator_TableVarName="tableBills" msprop:Generator_TablePropName="Bills" msprop:Generator_RowDeletingName="BillsRowDeleting" msprop:Generator_RowChangingName="BillsRowChanging" msprop:Generator_RowEvHandlerName="BillsRowChangeEventHandler" msprop:Generator_RowDeletedName="BillsRowDeleted" msprop:Generator_UserTableName="Bills" msprop:Generator_RowChangedName="BillsRowChanged" msprop:Generator_RowEvArgName="BillsRowChangeEvent" msprop:Generator_RowClassName="BillsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Fatura_x0020_Nu" msprop:Generator_ColumnVarNameInTable="columnFatura_Nu" msprop:Generator_ColumnPropNameInRow="Fatura_Nu" msprop:Generator_ColumnPropNameInTable="Fatura_NuColumn" msprop:Generator_UserColumnName="Fatura Nu" type="xs:int" />
+              <xs:element name="Fatura_x0020_Türü" msprop:Generator_ColumnVarNameInTable="columnFatura_Türü" msprop:Generator_ColumnPropNameInRow="Fatura_Türü" msprop:Generator_ColumnPropNameInTable="Fatura_TürüColumn" msprop:Generator_UserColumnName="Fatura Türü">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Okul_x0020_Nu" msprop:Generator_ColumnVarNameInTable="columnOkul_Nu" msprop:Generator_ColumnPropNameInRow="Okul_Nu" msprop:Generator_ColumnPropNameInTable="Okul_NuColumn" msprop:Generator_UserColumnName="Okul Nu" type="xs:int" minOccurs="0" />
+              <xs:element name="Okul_x0020_Adı" msprop:Generator_ColumnVarNameInTable="columnOkul_Adı" msprop:Generator_ColumnPropNameInRow="Okul_Adı" msprop:Generator_ColumnPropNameInTable="Okul_AdıColumn" msprop:Generator_UserColumnName="Okul Adı">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Okul_x0020_Türü" msprop:Generator_ColumnVarNameInTable="columnOkul_Türü" msprop:Generator_ColumnPropNameInRow="Okul_Türü" msprop:Generator_ColumnPropNameInTable="Okul_TürüColumn" msprop:Generator_UserColumnName="Okul Türü" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Fatura_x0020_Tarihi" msprop:Generator_ColumnVarNameInTable="columnFatura_Tarihi" msprop:Generator_ColumnPropNameInRow="Fatura_Tarihi" msprop:Generator_ColumnPropNameInTable="Fatura_TarihiColumn" msprop:Generator_UserColumnName="Fatura Tarihi" type="xs:dateTime" />
+              <xs:element name="Tüketim_x0020_Miktarı" msprop:Generator_ColumnVarNameInTable="columnTüketim_Miktarı" msprop:Generator_ColumnPropNameInRow="Tüketim_Miktarı" msprop:Generator_ColumnPropNameInTable="Tüketim_MiktarıColumn" msprop:Generator_UserColumnName="Tüketim Miktarı" type="xs:int" minOccurs="0" />
+              <xs:element name="Fatura_x0020_Tutarı" msprop:Generator_ColumnVarNameInTable="columnFatura_Tutarı" msprop:Generator_ColumnPropNameInRow="Fatura_Tutarı" msprop:Generator_ColumnPropNameInTable="Fatura_TutarıColumn" msprop:Generator_UserColumnName="Fatura Tutarı" type="xs:decimal" />
+              <xs:element name="Katma_x0020_Değer_x0020_Vergisi" msprop:Generator_ColumnVarNameInTable="columnKatma_Değer_Vergisi" msprop:Generator_ColumnPropNameInRow="Katma_Değer_Vergisi" msprop:Generator_ColumnPropNameInTable="Katma_Değer_VergisiColumn" msprop:Generator_UserColumnName="Katma Değer Vergisi" type="xs:decimal" />
+              <xs:element name="Fatura_x0020_Ödeme_x0020_Durumu" msprop:Generator_ColumnVarNameInTable="columnFatura_Ödeme_Durumu" msprop:Generator_ColumnPropNameInRow="Fatura_Ödeme_Durumu" msprop:Generator_ColumnPropNameInTable="Fatura_Ödeme_DurumuColumn" msprop:Generator_UserColumnName="Fatura Ödeme Durumu" type="xs:boolean" minOccurs="0" />
+              <xs:element name="Ödeme_x0020_Numarası" msprop:Generator_ColumnVarNameInTable="columnÖdeme_Numarası" msprop:Generator_ColumnPropNameInRow="Ödeme_Numarası" msprop:Generator_ColumnPropNameInTable="Ödeme_NumarasıColumn" msprop:Generator_UserColumnName="Ödeme Numarası" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Payments" msprop:Generator_TableClassName="PaymentsDataTable" msprop:Generator_TableVarName="tablePayments" msprop:Generator_TablePropName="Payments" msprop:Generator_RowDeletingName="PaymentsRowDeleting" msprop:Generator_RowChangingName="PaymentsRowChanging" msprop:Generator_RowEvHandlerName="PaymentsRowChangeEventHandler" msprop:Generator_RowDeletedName="PaymentsRowDeleted" msprop:Generator_UserTableName="Payments" msprop:Generator_RowChangedName="PaymentsRowChanged" msprop:Generator_RowEvArgName="PaymentsRowChangeEvent" msprop:Generator_RowClassName="PaymentsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PaymentId" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnPaymentId" msprop:Generator_ColumnPropNameInRow="PaymentId" msprop:Generator_ColumnPropNameInTable="PaymentIdColumn" msprop:Generator_UserColumnName="PaymentId" type="xs:decimal" />
+              <xs:element name="SubTypeId" msprop:Generator_ColumnVarNameInTable="columnSubTypeId" msprop:Generator_ColumnPropNameInRow="SubTypeId" msprop:Generator_ColumnPropNameInTable="SubTypeIdColumn" msprop:Generator_UserColumnName="SubTypeId" type="xs:int" minOccurs="0" />
+              <xs:element name="PaymentDate" msprop:Generator_ColumnVarNameInTable="columnPaymentDate" msprop:Generator_ColumnPropNameInRow="PaymentDate" msprop:Generator_ColumnPropNameInTable="PaymentDateColumn" msprop:Generator_UserColumnName="PaymentDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="PaymentConfirmDate" msprop:Generator_ColumnVarNameInTable="columnPaymentConfirmDate" msprop:Generator_ColumnPropNameInRow="PaymentConfirmDate" msprop:Generator_ColumnPropNameInTable="PaymentConfirmDateColumn" msprop:Generator_UserColumnName="PaymentConfirmDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="PaymentAmount" msprop:Generator_ColumnVarNameInTable="columnPaymentAmount" msprop:Generator_ColumnPropNameInRow="PaymentAmount" msprop:Generator_ColumnPropNameInTable="PaymentAmountColumn" msprop:Generator_UserColumnName="PaymentAmount" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PaymentTax" msprop:Generator_ColumnVarNameInTable="columnPaymentTax" msprop:Generator_ColumnPropNameInRow="PaymentTax" msprop:Generator_ColumnPropNameInTable="PaymentTaxColumn" msprop:Generator_UserColumnName="PaymentTax" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PaymentConsumption" msprop:Generator_ColumnVarNameInTable="columnPaymentConsumption" msprop:Generator_ColumnPropNameInRow="PaymentConsumption" msprop:Generator_ColumnPropNameInTable="PaymentConsumptionColumn" msprop:Generator_UserColumnName="PaymentConsumption" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PaymentConfirmPerson" msprop:Generator_ColumnVarNameInTable="columnPaymentConfirmPerson" msprop:Generator_ColumnPropNameInRow="PaymentConfirmPerson" msprop:Generator_ColumnPropNameInTable="PaymentConfirmPersonColumn" msprop:Generator_UserColumnName="PaymentConfirmPerson" type="xs:int" minOccurs="0" />
+              <xs:element name="OrderOfPaymentNumber" msprop:Generator_ColumnVarNameInTable="columnOrderOfPaymentNumber" msprop:Generator_ColumnPropNameInRow="OrderOfPaymentNumber" msprop:Generator_ColumnPropNameInTable="OrderOfPaymentNumberColumn" msprop:Generator_UserColumnName="OrderOfPaymentNumber" type="xs:decimal" minOccurs="0" />
+              <xs:element name="OrderOfPaymentConfirmDate" msprop:Generator_ColumnVarNameInTable="columnOrderOfPaymentConfirmDate" msprop:Generator_ColumnPropNameInRow="OrderOfPaymentConfirmDate" msprop:Generator_ColumnPropNameInTable="OrderOfPaymentConfirmDateColumn" msprop:Generator_UserColumnName="OrderOfPaymentConfirmDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="PaymentStatus" msprop:Generator_ColumnVarNameInTable="columnPaymentStatus" msprop:Generator_ColumnPropNameInRow="PaymentStatus" msprop:Generator_ColumnPropNameInTable="PaymentStatusColumn" msprop:Generator_UserColumnName="PaymentStatus" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Payments" />
+      <xs:field xpath="mstns:PaymentId" />
+    </xs:unique>
+    <xs:keyref name="Payments_Bills" refer="Constraint1" msdata:ConstraintOnly="true" msdata:AcceptRejectRule="Cascade" msdata:DeleteRule="SetNull">
+      <xs:selector xpath=".//mstns:Bills" />
+      <xs:field xpath="mstns:Ödeme_x0020_Numarası" />
+    </xs:keyref>
+  </xs:element>
+</xs:schema>

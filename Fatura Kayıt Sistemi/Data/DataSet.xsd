@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet" targetNamespace="http://tempuri.org/DataSet.xsd" xmlns:mstns="http://tempuri.org/DataSet.xsd" xmlns="http://tempuri.org/DataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="DBKayitOtomasyonuConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="DBKayitOtomasyonuConnectionString1 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Fatura_Kayıt_Sistemi.Properties.Settings.GlobalReference.Default.DBKayitOtomasyonuConnectionString1" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DataTable1TableAdapter" GeneratorDataComponentClassName="DataTable1TableAdapter" Name="DataTable1" UserDataComponentName="DataTable1TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="DBKayitOtomasyonuConnectionString1 (Settings)" DbObjectName="" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText />
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="BillId" DataSetColumn="BillId" />
+              <Mapping SourceColumn="SchoolId" DataSetColumn="SchoolId" />
+              <Mapping SourceColumn="SchoolName" DataSetColumn="SchoolName" />
+              <Mapping SourceColumn="SchoolType" DataSetColumn="SchoolType" />
+              <Mapping SourceColumn="SubNumber" DataSetColumn="SubNumber" />
+              <Mapping SourceColumn="BillDate" DataSetColumn="BillDate" />
+              <Mapping SourceColumn="BillConsumption" DataSetColumn="BillConsumption" />
+              <Mapping SourceColumn="BillAmount" DataSetColumn="BillAmount" />
+              <Mapping SourceColumn="BillTax" DataSetColumn="BillTax" />
+              <Mapping SourceColumn="BillStatus" DataSetColumn="BillStatus" />
+              <Mapping SourceColumn="SubType" DataSetColumn="SubType" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSet" msprop:Generator_UserDSName="DataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTable1" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_TablePropName="DataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_RowClassName="DataTable1Row" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="BillId" msprop:Generator_ColumnVarNameInTable="columnBillId" msprop:Generator_ColumnPropNameInRow="BillId" msprop:Generator_ColumnPropNameInTable="BillIdColumn" msprop:Generator_UserColumnName="BillId" type="xs:int" minOccurs="0" />
+              <xs:element name="SchoolId" msprop:Generator_ColumnVarNameInTable="columnSchoolId" msprop:Generator_ColumnPropNameInRow="SchoolId" msprop:Generator_ColumnPropNameInTable="SchoolIdColumn" msprop:Generator_UserColumnName="SchoolId" type="xs:int" minOccurs="0" />
+              <xs:element name="SchoolName" msprop:Generator_ColumnVarNameInTable="columnSchoolName" msprop:Generator_ColumnPropNameInRow="SchoolName" msprop:Generator_ColumnPropNameInTable="SchoolNameColumn" msprop:Generator_UserColumnName="SchoolName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SchoolType" msprop:Generator_ColumnVarNameInTable="columnSchoolType" msprop:Generator_ColumnPropNameInRow="SchoolType" msprop:Generator_ColumnPropNameInTable="SchoolTypeColumn" msprop:Generator_UserColumnName="SchoolType" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SubNumber" msprop:Generator_ColumnVarNameInTable="columnSubNumber" msprop:Generator_ColumnPropNameInRow="SubNumber" msprop:Generator_ColumnPropNameInTable="SubNumberColumn" msprop:Generator_UserColumnName="SubNumber" type="xs:long" />
+              <xs:element name="BillDate" msprop:Generator_ColumnVarNameInTable="columnBillDate" msprop:Generator_ColumnPropNameInRow="BillDate" msprop:Generator_ColumnPropNameInTable="BillDateColumn" msprop:Generator_UserColumnName="BillDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="BillConsumption" msprop:Generator_ColumnVarNameInTable="columnBillConsumption" msprop:Generator_ColumnPropNameInRow="BillConsumption" msprop:Generator_ColumnPropNameInTable="BillConsumptionColumn" msprop:Generator_UserColumnName="BillConsumption" type="xs:int" minOccurs="0" />
+              <xs:element name="BillAmount" msprop:Generator_ColumnVarNameInTable="columnBillAmount" msprop:Generator_ColumnPropNameInRow="BillAmount" msprop:Generator_ColumnPropNameInTable="BillAmountColumn" msprop:Generator_UserColumnName="BillAmount" type="xs:decimal" minOccurs="0" />
+              <xs:element name="BillTax" msprop:Generator_ColumnVarNameInTable="columnBillTax" msprop:Generator_ColumnPropNameInRow="BillTax" msprop:Generator_ColumnPropNameInTable="BillTaxColumn" msprop:Generator_UserColumnName="BillTax" type="xs:decimal" minOccurs="0" />
+              <xs:element name="BillStatus" msprop:Generator_ColumnVarNameInTable="columnBillStatus" msprop:Generator_ColumnPropNameInRow="BillStatus" msprop:Generator_ColumnPropNameInTable="BillStatusColumn" msprop:Generator_UserColumnName="BillStatus" type="xs:boolean" minOccurs="0" />
+              <xs:element name="SubType" msprop:Generator_ColumnVarNameInTable="columnSubType" msprop:Generator_ColumnPropNameInRow="SubType" msprop:Generator_ColumnPropNameInTable="SubTypeColumn" msprop:Generator_UserColumnName="SubType" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,1300 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Cbox_Fatura_Türü.ItemHeight" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="Cbox_Fatura_Türü.Location" type="System.Drawing.Point, System.Drawing">
+    <value>96, 25</value>
+  </data>
+  <data name="Cbox_Fatura_Türü.Size" type="System.Drawing.Size, System.Drawing">
+    <value>305, 21</value>
+  </data>
+  <data name="Cbox_Fatura_Türü.TabIndex" type="System.Int32, mscorlib">
+    <value>58</value>
+  </data>
+  <data name="&gt;&gt;Cbox_Fatura_Türü.Name" xml:space="preserve">
+    <value>Cbox_Fatura_Türü</value>
+  </data>
+  <data name="&gt;&gt;Cbox_Fatura_Türü.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Cbox_Fatura_Türü.Parent" xml:space="preserve">
+    <value>gBoxFilter</value>
+  </data>
+  <data name="&gt;&gt;Cbox_Fatura_Türü.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>25, 28</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 13</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>57</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Fatura Türü:</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>gBoxFilter</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="Tbox_Okul_No.Location" type="System.Drawing.Point, System.Drawing">
+    <value>96, 59</value>
+  </data>
+  <data name="Tbox_Okul_No.Size" type="System.Drawing.Size, System.Drawing">
+    <value>305, 20</value>
+  </data>
+  <data name="Tbox_Okul_No.TabIndex" type="System.Int32, mscorlib">
+    <value>59</value>
+  </data>
+  <data name="&gt;&gt;Tbox_Okul_No.Name" xml:space="preserve">
+    <value>Tbox_Okul_No</value>
+  </data>
+  <data name="&gt;&gt;Tbox_Okul_No.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Tbox_Okul_No.Parent" xml:space="preserve">
+    <value>gBoxFilter</value>
+  </data>
+  <data name="&gt;&gt;Tbox_Okul_No.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>41, 60</value>
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 13</value>
+  </data>
+  <data name="label2.TabIndex" type="System.Int32, mscorlib">
+    <value>60</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Okul No:</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>gBoxFilter</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 129</value>
+  </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 13</value>
+  </data>
+  <data name="label3.TabIndex" type="System.Int32, mscorlib">
+    <value>62</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>Fatura Tarihi:</value>
+  </data>
+  <data name="&gt;&gt;label3.Name" xml:space="preserve">
+    <value>label3</value>
+  </data>
+  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+    <value>gBoxFilter</value>
+  </data>
+  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Btn_F_D_Al.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="Btn_F_D_Al.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 24</value>
+  </data>
+  <data name="Btn_F_D_Al.Size" type="System.Drawing.Size, System.Drawing">
+    <value>162, 45</value>
+  </data>
+  <data name="Btn_F_D_Al.TabIndex" type="System.Int32, mscorlib">
+    <value>65</value>
+  </data>
+  <data name="Btn_F_D_Al.Text" xml:space="preserve">
+    <value>Rapor Servisine Git</value>
+  </data>
+  <data name="&gt;&gt;Btn_F_D_Al.Name" xml:space="preserve">
+    <value>Btn_F_D_Al</value>
+  </data>
+  <data name="&gt;&gt;Btn_F_D_Al.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Btn_F_D_Al.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;Btn_F_D_Al.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="label5.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="label5.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label5.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 23</value>
+  </data>
+  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>91, 13</value>
+  </data>
+  <data name="label5.TabIndex" type="System.Int32, mscorlib">
+    <value>68</value>
+  </data>
+  <data name="label5.Text" xml:space="preserve">
+    <value>Toplam Harcama:</value>
+  </data>
+  <data name="&gt;&gt;label5.Name" xml:space="preserve">
+    <value>label5</value>
+  </data>
+  <data name="&gt;&gt;label5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label5.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="Tbox_Top_Harcama.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="Tbox_Top_Harcama.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="Tbox_Top_Harcama.Location" type="System.Drawing.Point, System.Drawing">
+    <value>106, 17</value>
+  </data>
+  <data name="Tbox_Top_Harcama.Size" type="System.Drawing.Size, System.Drawing">
+    <value>177, 20</value>
+  </data>
+  <data name="Tbox_Top_Harcama.TabIndex" type="System.Int32, mscorlib">
+    <value>69</value>
+  </data>
+  <data name="&gt;&gt;Tbox_Top_Harcama.Name" xml:space="preserve">
+    <value>Tbox_Top_Harcama</value>
+  </data>
+  <data name="&gt;&gt;Tbox_Top_Harcama.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Tbox_Top_Harcama.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;Tbox_Top_Harcama.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="Tbox_Top_Tutar.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="Tbox_Top_Tutar.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="Tbox_Top_Tutar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>106, 45</value>
+  </data>
+  <data name="Tbox_Top_Tutar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>177, 20</value>
+  </data>
+  <data name="Tbox_Top_Tutar.TabIndex" type="System.Int32, mscorlib">
+    <value>71</value>
+  </data>
+  <data name="&gt;&gt;Tbox_Top_Tutar.Name" xml:space="preserve">
+    <value>Tbox_Top_Tutar</value>
+  </data>
+  <data name="&gt;&gt;Tbox_Top_Tutar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Tbox_Top_Tutar.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;Tbox_Top_Tutar.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="label6.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="label6.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label6.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>27, 51</value>
+  </data>
+  <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 13</value>
+  </data>
+  <data name="label6.TabIndex" type="System.Int32, mscorlib">
+    <value>70</value>
+  </data>
+  <data name="label6.Text" xml:space="preserve">
+    <value>Toplam Tutar:</value>
+  </data>
+  <data name="&gt;&gt;label6.Name" xml:space="preserve">
+    <value>label6</value>
+  </data>
+  <data name="&gt;&gt;label6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label6.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="Tbox_Top_KDV.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="Tbox_Top_KDV.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="Tbox_Top_KDV.Location" type="System.Drawing.Point, System.Drawing">
+    <value>106, 73</value>
+  </data>
+  <data name="Tbox_Top_KDV.Size" type="System.Drawing.Size, System.Drawing">
+    <value>177, 20</value>
+  </data>
+  <data name="Tbox_Top_KDV.TabIndex" type="System.Int32, mscorlib">
+    <value>73</value>
+  </data>
+  <data name="&gt;&gt;Tbox_Top_KDV.Name" xml:space="preserve">
+    <value>Tbox_Top_KDV</value>
+  </data>
+  <data name="&gt;&gt;Tbox_Top_KDV.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Tbox_Top_KDV.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;Tbox_Top_KDV.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="label7.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="label7.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label7.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>30, 80</value>
+  </data>
+  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 13</value>
+  </data>
+  <data name="label7.TabIndex" type="System.Int32, mscorlib">
+    <value>72</value>
+  </data>
+  <data name="label7.Text" xml:space="preserve">
+    <value>Toplam KDV:</value>
+  </data>
+  <data name="&gt;&gt;label7.Name" xml:space="preserve">
+    <value>label7</value>
+  </data>
+  <data name="&gt;&gt;label7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label7.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="Lbl_o_türü.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Lbl_o_türü.Location" type="System.Drawing.Point, System.Drawing">
+    <value>33, 98</value>
+  </data>
+  <data name="Lbl_o_türü.Size" type="System.Drawing.Size, System.Drawing">
+    <value>57, 13</value>
+  </data>
+  <data name="Lbl_o_türü.TabIndex" type="System.Int32, mscorlib">
+    <value>76</value>
+  </data>
+  <data name="Lbl_o_türü.Text" xml:space="preserve">
+    <value>Okul Türü:</value>
+  </data>
+  <data name="&gt;&gt;Lbl_o_türü.Name" xml:space="preserve">
+    <value>Lbl_o_türü</value>
+  </data>
+  <data name="&gt;&gt;Lbl_o_türü.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Lbl_o_türü.Parent" xml:space="preserve">
+    <value>gBoxFilter</value>
+  </data>
+  <data name="&gt;&gt;Lbl_o_türü.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="Cbox_Okul_Türü.ItemHeight" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="Cbox_Okul_Türü.Location" type="System.Drawing.Point, System.Drawing">
+    <value>96, 90</value>
+  </data>
+  <data name="Cbox_Okul_Türü.Size" type="System.Drawing.Size, System.Drawing">
+    <value>305, 21</value>
+  </data>
+  <data name="Cbox_Okul_Türü.TabIndex" type="System.Int32, mscorlib">
+    <value>75</value>
+  </data>
+  <data name="&gt;&gt;Cbox_Okul_Türü.Name" xml:space="preserve">
+    <value>Cbox_Okul_Türü</value>
+  </data>
+  <data name="&gt;&gt;Cbox_Okul_Türü.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Cbox_Okul_Türü.Parent" xml:space="preserve">
+    <value>gBoxFilter</value>
+  </data>
+  <data name="&gt;&gt;Cbox_Okul_Türü.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="CheckBox_Only_Notpay.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="CheckBox_Only_Notpay.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt</value>
+  </data>
+  <data name="CheckBox_Only_Notpay.Location" type="System.Drawing.Point, System.Drawing">
+    <value>417, 28</value>
+  </data>
+  <data name="CheckBox_Only_Notpay.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="CheckBox_Only_Notpay.Size" type="System.Drawing.Size, System.Drawing">
+    <value>156, 21</value>
+  </data>
+  <data name="CheckBox_Only_Notpay.TabIndex" type="System.Int32, mscorlib">
+    <value>77</value>
+  </data>
+  <data name="CheckBox_Only_Notpay.Text" xml:space="preserve">
+    <value>Sadece Ödenmeyen</value>
+  </data>
+  <data name="&gt;&gt;CheckBox_Only_Notpay.Name" xml:space="preserve">
+    <value>CheckBox_Only_Notpay</value>
+  </data>
+  <data name="&gt;&gt;CheckBox_Only_Notpay.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CheckBox_Only_Notpay.Parent" xml:space="preserve">
+    <value>gBoxFilter</value>
+  </data>
+  <data name="&gt;&gt;CheckBox_Only_Notpay.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <metadata name="groupBox1.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="groupBox1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>964, 12</value>
+  </data>
+  <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>195, 85</value>
+  </data>
+  <data name="groupBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>79</value>
+  </data>
+  <data name="groupBox1.Text" xml:space="preserve">
+    <value>Rapor Servisi</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Name" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="checkBox_Only_Odenen.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="checkBox_Only_Odenen.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt</value>
+  </data>
+  <data name="checkBox_Only_Odenen.Location" type="System.Drawing.Point, System.Drawing">
+    <value>417, 59</value>
+  </data>
+  <data name="checkBox_Only_Odenen.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="checkBox_Only_Odenen.Size" type="System.Drawing.Size, System.Drawing">
+    <value>130, 21</value>
+  </data>
+  <data name="checkBox_Only_Odenen.TabIndex" type="System.Int32, mscorlib">
+    <value>80</value>
+  </data>
+  <data name="checkBox_Only_Odenen.Text" xml:space="preserve">
+    <value>Sadece Ödenen</value>
+  </data>
+  <data name="&gt;&gt;checkBox_Only_Odenen.Name" xml:space="preserve">
+    <value>checkBox_Only_Odenen</value>
+  </data>
+  <data name="&gt;&gt;checkBox_Only_Odenen.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkBox_Only_Odenen.Parent" xml:space="preserve">
+    <value>gBoxFilter</value>
+  </data>
+  <data name="&gt;&gt;checkBox_Only_Odenen.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <metadata name="btnSorgula.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="btnSorgula.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="btnSorgula.Location" type="System.Drawing.Point, System.Drawing">
+    <value>818, 22</value>
+  </data>
+  <data name="btnSorgula.Size" type="System.Drawing.Size, System.Drawing">
+    <value>140, 0</value>
+  </data>
+  <data name="btnSorgula.TabIndex" type="System.Int32, mscorlib">
+    <value>81</value>
+  </data>
+  <data name="btnSorgula.Text" xml:space="preserve">
+    <value>Sorgula</value>
+  </data>
+  <data name="&gt;&gt;btnSorgula.Name" xml:space="preserve">
+    <value>btnSorgula</value>
+  </data>
+  <data name="&gt;&gt;btnSorgula.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnSorgula.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnSorgula.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="btnSorgulama.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="btnSorgulama.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnSorgulama.Location" type="System.Drawing.Point, System.Drawing">
+    <value>417, 123</value>
+  </data>
+  <data name="btnSorgulama.Size" type="System.Drawing.Size, System.Drawing">
+    <value>112, 64</value>
+  </data>
+  <data name="btnSorgulama.TabIndex" type="System.Int32, mscorlib">
+    <value>83</value>
+  </data>
+  <data name="btnSorgulama.Text" xml:space="preserve">
+    <value>Sorgula</value>
+  </data>
+  <data name="&gt;&gt;btnSorgulama.Name" xml:space="preserve">
+    <value>btnSorgulama</value>
+  </data>
+  <data name="&gt;&gt;btnSorgulama.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnSorgulama.Parent" xml:space="preserve">
+    <value>gBoxFilter</value>
+  </data>
+  <data name="&gt;&gt;btnSorgulama.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <metadata name="DGV_main.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="DGV_main.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <metadata name="contextMenuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="düzenleToolStripMenuItem.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="düzenleToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>116, 22</value>
+  </data>
+  <data name="düzenleToolStripMenuItem.Text" xml:space="preserve">
+    <value>Düzenle</value>
+  </data>
+  <data name="contextMenuStrip1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>117, 26</value>
+  </data>
+  <data name="&gt;&gt;contextMenuStrip1.Name" xml:space="preserve">
+    <value>contextMenuStrip1</value>
+  </data>
+  <data name="&gt;&gt;contextMenuStrip1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DGV_main.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 210</value>
+  </data>
+  <data name="DGV_main.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1219, 490</value>
+  </data>
+  <data name="DGV_main.TabIndex" type="System.Int32, mscorlib">
+    <value>96</value>
+  </data>
+  <data name="&gt;&gt;DGV_main.Name" xml:space="preserve">
+    <value>DGV_main</value>
+  </data>
+  <data name="&gt;&gt;DGV_main.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DGV_main.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;DGV_main.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="comboxBillDateMounth.Items" xml:space="preserve">
+    <value>Ocak</value>
+  </data>
+  <data name="comboxBillDateMounth.Items1" xml:space="preserve">
+    <value>Şubat</value>
+  </data>
+  <data name="comboxBillDateMounth.Items2" xml:space="preserve">
+    <value>Mart</value>
+  </data>
+  <data name="comboxBillDateMounth.Items3" xml:space="preserve">
+    <value>Nisan</value>
+  </data>
+  <data name="comboxBillDateMounth.Items4" xml:space="preserve">
+    <value>Mayıs</value>
+  </data>
+  <data name="comboxBillDateMounth.Items5" xml:space="preserve">
+    <value>Haziran</value>
+  </data>
+  <data name="comboxBillDateMounth.Items6" xml:space="preserve">
+    <value>Temmuz</value>
+  </data>
+  <data name="comboxBillDateMounth.Items7" xml:space="preserve">
+    <value>Ağustos</value>
+  </data>
+  <data name="comboxBillDateMounth.Items8" xml:space="preserve">
+    <value>Eylül</value>
+  </data>
+  <data name="comboxBillDateMounth.Items9" xml:space="preserve">
+    <value>Ekim</value>
+  </data>
+  <data name="comboxBillDateMounth.Items10" xml:space="preserve">
+    <value>Kasım</value>
+  </data>
+  <data name="comboxBillDateMounth.Items11" xml:space="preserve">
+    <value>Aralık</value>
+  </data>
+  <data name="comboxBillDateMounth.Location" type="System.Drawing.Point, System.Drawing">
+    <value>32, 150</value>
+  </data>
+  <data name="comboxBillDateMounth.Size" type="System.Drawing.Size, System.Drawing">
+    <value>85, 21</value>
+  </data>
+  <data name="comboxBillDateMounth.TabIndex" type="System.Int32, mscorlib">
+    <value>97</value>
+  </data>
+  <data name="&gt;&gt;comboxBillDateMounth.Name" xml:space="preserve">
+    <value>comboxBillDateMounth</value>
+  </data>
+  <data name="&gt;&gt;comboxBillDateMounth.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboxBillDateMounth.Parent" xml:space="preserve">
+    <value>gBoxFilter</value>
+  </data>
+  <data name="&gt;&gt;comboxBillDateMounth.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="comboxBillDateYear.Items" xml:space="preserve">
+    <value>2017</value>
+  </data>
+  <data name="comboxBillDateYear.Items1" xml:space="preserve">
+    <value>2018</value>
+  </data>
+  <data name="comboxBillDateYear.Items2" xml:space="preserve">
+    <value>2019</value>
+  </data>
+  <data name="comboxBillDateYear.Items3" xml:space="preserve">
+    <value>2020</value>
+  </data>
+  <data name="comboxBillDateYear.Items4" xml:space="preserve">
+    <value>2021</value>
+  </data>
+  <data name="comboxBillDateYear.Items5" xml:space="preserve">
+    <value>2022</value>
+  </data>
+  <data name="comboxBillDateYear.Items6" xml:space="preserve">
+    <value>2023</value>
+  </data>
+  <data name="comboxBillDateYear.Items7" xml:space="preserve">
+    <value>2024</value>
+  </data>
+  <data name="comboxBillDateYear.Items8" xml:space="preserve">
+    <value>2025</value>
+  </data>
+  <data name="comboxBillDateYear.Location" type="System.Drawing.Point, System.Drawing">
+    <value>134, 150</value>
+  </data>
+  <data name="comboxBillDateYear.Size" type="System.Drawing.Size, System.Drawing">
+    <value>85, 21</value>
+  </data>
+  <data name="comboxBillDateYear.TabIndex" type="System.Int32, mscorlib">
+    <value>98</value>
+  </data>
+  <data name="&gt;&gt;comboxBillDateYear.Name" xml:space="preserve">
+    <value>comboxBillDateYear</value>
+  </data>
+  <data name="&gt;&gt;comboxBillDateYear.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboxBillDateYear.Parent" xml:space="preserve">
+    <value>gBoxFilter</value>
+  </data>
+  <data name="&gt;&gt;comboxBillDateYear.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="chBoxAllYear.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chBoxAllYear.Location" type="System.Drawing.Point, System.Drawing">
+    <value>225, 152</value>
+  </data>
+  <data name="chBoxAllYear.Size" type="System.Drawing.Size, System.Drawing">
+    <value>85, 17</value>
+  </data>
+  <data name="chBoxAllYear.TabIndex" type="System.Int32, mscorlib">
+    <value>99</value>
+  </data>
+  <data name="chBoxAllYear.Text" xml:space="preserve">
+    <value>Tüm Yılı Seç</value>
+  </data>
+  <data name="&gt;&gt;chBoxAllYear.Name" xml:space="preserve">
+    <value>chBoxAllYear</value>
+  </data>
+  <data name="&gt;&gt;chBoxAllYear.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chBoxAllYear.Parent" xml:space="preserve">
+    <value>gBoxFilter</value>
+  </data>
+  <data name="&gt;&gt;chBoxAllYear.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btnPayment.Location" type="System.Drawing.Point, System.Drawing">
+    <value>21, 19</value>
+  </data>
+  <data name="btnPayment.Size" type="System.Drawing.Size, System.Drawing">
+    <value>162, 50</value>
+  </data>
+  <data name="btnPayment.TabIndex" type="System.Int32, mscorlib">
+    <value>101</value>
+  </data>
+  <data name="btnPayment.Text" xml:space="preserve">
+    <value>Ödeme Hazırla</value>
+  </data>
+  <data name="&gt;&gt;btnPayment.Name" xml:space="preserve">
+    <value>btnPayment</value>
+  </data>
+  <data name="&gt;&gt;btnPayment.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnPayment.Parent" xml:space="preserve">
+    <value>gBoxPayment</value>
+  </data>
+  <data name="&gt;&gt;btnPayment.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="gBoxPayment.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="gBoxPayment.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="gBoxPayment.Location" type="System.Drawing.Point, System.Drawing">
+    <value>963, 110</value>
+  </data>
+  <data name="gBoxPayment.Size" type="System.Drawing.Size, System.Drawing">
+    <value>199, 80</value>
+  </data>
+  <data name="gBoxPayment.TabIndex" type="System.Int32, mscorlib">
+    <value>102</value>
+  </data>
+  <data name="gBoxPayment.Text" xml:space="preserve">
+    <value>Ödeme</value>
+  </data>
+  <data name="gBoxPayment.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;gBoxPayment.Name" xml:space="preserve">
+    <value>gBoxPayment</value>
+  </data>
+  <data name="&gt;&gt;gBoxPayment.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;gBoxPayment.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;gBoxPayment.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <metadata name="dataSet4Payment1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>172, 17</value>
+  </metadata>
+  <metadata name="gBoxFilter.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="chkBoxCorrectData.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="chkBoxCorrectData.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chkBoxCorrectData.Location" type="System.Drawing.Point, System.Drawing">
+    <value>417, 87</value>
+  </data>
+  <data name="chkBoxCorrectData.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 17</value>
+  </data>
+  <data name="chkBoxCorrectData.TabIndex" type="System.Int32, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="chkBoxCorrectData.Text" xml:space="preserve">
+    <value>Doğrulanmış Kayıtlar</value>
+  </data>
+  <data name="&gt;&gt;chkBoxCorrectData.Name" xml:space="preserve">
+    <value>chkBoxCorrectData</value>
+  </data>
+  <data name="&gt;&gt;chkBoxCorrectData.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkBoxCorrectData.Parent" xml:space="preserve">
+    <value>gBoxFilter</value>
+  </data>
+  <data name="&gt;&gt;chkBoxCorrectData.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="gBoxFilter.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 11</value>
+  </data>
+  <data name="gBoxFilter.Size" type="System.Drawing.Size, System.Drawing">
+    <value>590, 193</value>
+  </data>
+  <data name="gBoxFilter.TabIndex" type="System.Int32, mscorlib">
+    <value>103</value>
+  </data>
+  <data name="gBoxFilter.Text" xml:space="preserve">
+    <value>Filtre</value>
+  </data>
+  <data name="&gt;&gt;gBoxFilter.Name" xml:space="preserve">
+    <value>gBoxFilter</value>
+  </data>
+  <data name="&gt;&gt;gBoxFilter.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;gBoxFilter.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;gBoxFilter.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <metadata name="groupBox2.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="groupBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>599, 11</value>
+  </data>
+  <data name="groupBox2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>300, 104</value>
+  </data>
+  <data name="groupBox2.TabIndex" type="System.Int32, mscorlib">
+    <value>104</value>
+  </data>
+  <data name="groupBox2.Text" xml:space="preserve">
+    <value>Toplamlar:</value>
+  </data>
+  <data name="&gt;&gt;groupBox2.Name" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;groupBox2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;groupBox2.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="checkBoxSelectAll.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="checkBoxSelectAll.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="checkBoxSelectAll.Location" type="System.Drawing.Point, System.Drawing">
+    <value>619, 187</value>
+  </data>
+  <data name="checkBoxSelectAll.Size" type="System.Drawing.Size, System.Drawing">
+    <value>87, 17</value>
+  </data>
+  <data name="checkBoxSelectAll.TabIndex" type="System.Int32, mscorlib">
+    <value>105</value>
+  </data>
+  <data name="checkBoxSelectAll.Text" xml:space="preserve">
+    <value>Tümünü Seç</value>
+  </data>
+  <data name="&gt;&gt;checkBoxSelectAll.Name" xml:space="preserve">
+    <value>checkBoxSelectAll</value>
+  </data>
+  <data name="&gt;&gt;checkBoxSelectAll.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkBoxSelectAll.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;checkBoxSelectAll.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1254, 732</value>
+  </data>
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAMAEBAAAAEAIABoBAAANgAAACAgAAABACAAqBAAAJ4EAAAwMAAAAQAgAKglAABGFQAAKAAAABAA
+        AAAgAAAAAQAgAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAABAAAAAQAAAAEAAAAAAAAAAAAA
+        AAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAFGRkUBubi2Kby6
+        uSOmpaQEuLe2AAAAAAAAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAH///8AvLu5K8zK
+        ydLRzczhzcvKos3LyljKycgdrayrA728uwAAAAAAAAAAAAAAAAEAAAABAAAAAQAAAAH///8AtrSzENDN
+        zK3X3+D/u9zn/9Xe4P/d3Nz63tvZ2tza2Zvc2tpRuM65GSatOR0gnDYKAAAAAAAAAAEAAAABhIGAAs3L
+        ynvd3t38p9rq/5PX7v+J1u//q93t/77h7f/a5un/6ujp+JfQndUutEHYOKxUTFf3dwAAAAAB////AMzL
+        ykrf3Nrswt/o/5PY7v+U1+3/ndvu/5ra7/+Z2/D/p+D1/9Tp2P9Yw2b/N7hJ/2S8fJ0AMw4DAAAAAdLL
+        yCrg29nN0eHn/5HX7v+e2u3/mNrv/5zb7/+Y2vD/l9zz/8vo3v9mynX/LrpE/zy/Uf+FypjgPqRvJVT/
+        pwCyytOisdXa/8Xc3f++4Ov/r9/w/6Pd8f+Z2/H/l9vz/8bn5P9z04T/NcNQ/zjFU/8+yFr/ntet/mS4
+        jGra//EAQMPufXPJuf3YvGP/ysWC/8PPqP/A2cr/veHn/8Xo6P+A2pL/PMxd/z7OX/8/z2H/QtFk/6vg
+        uP+GxqW5AIInDQyw+GZoxsv889WD//7Qdv/7yWn/8cdp/6TLpf9p3Kn/RtVp/0XWa/9G2G3/R9lv/0fb
+        cP+r5rv/q9S/7iapZ0QesfQ1Sczxm4Db28Wc38vjt9+4+dTaov+Ry7X/PtiX/0vfdP9L4Hn/S+F6/0rj
+        e/9J5Hz/pOq6/8/g1/9PuoafAgAAABKn5AIwzf8NVN3/I1nltKdj6LP/Y+XB/0njkv9J54L/TeiH/1vp
+        kf9z6aD/i+ev/rTkyO+/3s/GXMCQfgAAAAEAAAABAAAAAEPphAJI6oilSuqK/1bsk/9t7KL/ieqy/5/n
+        vvyp4sTkqNzDs53VvHOByqo3QbB7DwAgAAEAAAABAAAAAQAAAAE3ynoGSO2TcI7tubnE7dbLvuTRtYDP
+        rNZuyaGCY8KZJh6cYQih//8AAA4BAAAAAAAAAAABAAAAAQAAAAEAAAABCi0bASGKXgH93vMM/+LyEUKp
+        fAkQq2YXBaFaBgixZQAAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAAAA
+        AAAAAAABAAAAAAAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEMAAAAAYAAACA4AABAAgAAAAIAAIAA
+        AAAAAQAAAAEAAAAAAAAAAAAAAAAAAIAAAAAgAAAAAA4AAAAgAAAGgAAAKAAAACAAAABAAAAAAQAgAAAA
+        AAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAA
+        AAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAA
+        AAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAA
+        AAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAA
+        AAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAA
+        AAEAAAABAAAAAQAAAAEAAAAAAAAAAAAAAAAAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAA
+        AAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAA
+        AAEAAAABAAAAAQAAAAH///8At7a0HL69vGvBv74/uri3Dzo7OgBzc3IAAAAAAAAAAAEAAAABAAAAAQAA
+        AAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAA
+        AAEAAAABAAAAAQAAAAEAAAABAAAAALKxrwm8urmZwsC//8TDwvLGxMPEyMbFfsjGxTi/vbwMAAAAAIaG
+        hQAAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAA
+        AAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAH///8AvLu5Z8jHxffa2dj/1dPS/87NzP/Lysn/zMrJ783M
+        y77Pzs12z87NMsPCwQr///8AAAAAAAAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAA
+        AAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAAB////AL28ujrFw8Li3t3c/+jn5f/q5+X/6OXk/+Hg
+        3//a2dj/1NPS/9LR0P7T0tHr1dTTt9fV1G7W1dQsyMfGCPLx8AAAAAAAAAAAAQAAAAAAAAAAAAAAAQAA
+        AAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAf///wC+vLsZxMLBv9jX1v/o5+X/xdzj/3PM
+        7v+s2+z/6ujn/+jp6P/q6ef/5eTj/+Df3v/b2tn/2tnY/tva2efd3Nqw3dzbZ9va2SarvqwEKa46Eiqx
+        PTgdoDgRAAAAAAAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAAAtbSyBsTCwZDT0tH/5uXk/+rn
+        5f+63OP/YtX4/3HS8v+Azer/V8jz/8vk7P/k6er/5evr/+3s6//r6ej/5uXk/+Lh4P/g39792tzY3lzA
+        aaArtj3JK7NA7h2fQFk35FsAAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAf///wDFw8Jez87M9OTj
+        4v/j5eT/hs/q/2nM8f/H4en/1+Tm/5Pa6/9U0/n/ptrr/1/K8P9ZzPf/2eju/9fo7v/q7+//8O/u/+3s
+        7P/a49r/Tb5c/yq1Pf81t0f/RK5kqgBaHQYAAAABAAAAAQAAAAEAAAABAAAAAQAAAAH///8AxsTDMs3L
+        ytzg397/6ejm/9/j4/+Q2uz/UtL5/5vW6/9ayPH/fNHw/93o6v/V5Of/ouDu/4jc9P+c2ez/Ocb5/53c
+        9P/08vD/8vHx/6Paqv81uEb/LLY+/ze5SP9uv4TnHZRSLyPodgAAAAABAAAAAQAAAAEAAAAB////AMXD
+        whTMysm23Nva/+ro5v/T4eX/bczv/4fT7//d5+j/yeDl/4jc8v+F2vT/qNrq/0vI9v+j2/D/1ebs/7fg
+        6/+h4vH/xOfx//Ty8f+t3bP/O7pM/yy2Pv8ttj//M7hE/43Mm/9Cp2947///AAAAAAEAAAABAAAAAQAA
+        AAG2tLMEzcvKhtjX1v3o5+b/4OTm/7zb5P+S3fD/kNvy/6rZ6f9Zy/X/ptvu/9fl6v+v3en/luDz/6vf
+        7v9hzfH/Q8n6/9rq8P/28vH/tuC8/0G9Uv8tuED/L7lD/zC6RP8xu0b/n9Wn/2m4jMUAeyIRzP//AAAA
+        AAEAAAAB////AM7My1TW1NPx5eXk/+ro5/+W1Of/Osb4/5fX7//Q4ej/mdbp/5jf8v+24e3/edPw/1TO
+        +f+73+3/ntju/6be7v+75/H/6vDy/8DkxP9Iw1z/MLxG/zK9Sf8zvkr/M79L/zO/S/+f2Kj/lcqs9Q6W
+        S0gd0W4AAAAAAQAAAAHPzMsx0tDP1Nva3P/p5+f/7Oro/9fl5/+y5O7/wuLr/4bU7P9Rzvr/qtvt/5TW
+        7/+f3O//x+fv/6vd6v9Z0ff/jtv1//fy8f/I58z/Uchm/zPATP82wk//NsJQ/zfDUf83xFL/NcRR/5bZ
+        ov/C283/MKVmmAAuAAIAAAABAAAAAdTQz4CfwdH+a8rf/5DK1f+tz9v/ydrl/+Dj6P/t6uv/4+rq/9Xr
+        7v/F4un/eNj0/4XY8/+G0Or/Yc/3/8Pm8P/t8PH/z+nT/1nNcP82xVL/OcZV/znHVv86x1b/OshX/zvJ
+        WP84yVf/jNqc/+Hm4v9XtoPcAJJDIiv/pwAAAAAByMbMKT+65MQ95fv/nciH/7++W/+hw4j/ksew/5fM
+        z/+u1eL/yt/q/+Hn7f/p7O3/7O/u/8br8/+l6Pn/2+30/9fs2f9j0nr/OclY/zzKWv88y1v/Pcxc/z3M
+        Xf8+zV7/Ps5f/zzOXv+E25j/7Onp/4jIpv0UnlVlI9l6AAAAAAEAQpIBGrbvoTTZ+/+0tXP//681//62
+        Nv/0tiv/3rw8/8HCXf+kxob/lcqw/5nQ0f+t2OX/zeLr/+vs7//c7d7/bNeE/zzNXv8/z2D/QM9h/0DQ
+        Yv9B0WP/QdFk/0LSZf9C02b/QNNl/3zdlf/q6ej/utrJ/yypaLUGkEkKAAAAAAAzaQIUrO6hKcz7/67C
+        kP//zXr//8yG///FeP//wWz//8Bd//+6QP/2wED/48JH/73Eav9g093/meDi/3jcjv9A0mT/QtNm/0PU
+        Z/9D1Gj/RNVp/0TWav9F1mv/Rdds/0bYbf9E2Gz/duCS/+fq5v/d5eD/ULeC7RGgVzgp5IUAADZrAg2i
+        7aEdvvr/nc+s//zriv//6Ir//+KI///biv//0oT//8+K///Pjv//yoD/8Lpf/17Q1f9K3LT/Rtdp/0XX
+        bP9G2G3/Rtlu/0fZb/9H2nD/SNtx/0jbcv9J3HP/Sd10/0jdc/9w45H/5Ovl/+ro6P+ByaX/G6ZhhD7/
+        xQAAADUCHa7yjzPI/fZRzu/+ddXb/5PayP+z37T/0OKf/+jjj//34YX//tx+///XfP/yx3P/V8fY/zbW
+        rv9J3G//Sdxz/0rddP9K3nX/S952/0vfd/9M4Hj/TOB5/0zhef9N4nr/S+J6/2rlkf/i7eT/6+fn/7bb
+        yP8srm7NHKViGgAAAAE7xfMWStT8PEzX/mJP2f+OVNv/t1rb/tli2/fxbtvt/YDa3v+Y28r/s9ux/8LS
+        mf9EvuH/M9K0/03hd/9M4Xr/TeJ7/03ifP9N43z/TeR9/03kfv9N5H//TOWA/0zlgf9J5oD/X+iQ/93u
+        4v/p5ub/3Ofg/027hfceqmZgAAAAAQAAAAAAAAAATZKcAD1ucwBkzeEIb+L3GnXp/zZw6+dzaOnI8m/r
+        2v916+r/eufx/13b+P9F267/TeV9/0zlgP9M5YH/TOaC/0vmg/9L54T/SueE/0johP9J6Ib/UOmL/2Lp
+        lv+K6q//4ezk/+fn5v/d5+H/bMab9yKtapoAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAAAS+V+AEvl
+        fTdM5X/xTuaE/1Tpjv9e7Z3/Y+6m/0/oi/9K6IX/SuiG/0noh/9H6Yf/R+mI/03qjP9d6pb/eeun/57r
+        vf/A6tD/0ujb/87j2P623crumNS4xHnLpIdMu4ZHI6lpGgAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAA
+        AAFi/7EASuaGUEroh/tK6Yf/SemI/0jpiP9H6Yj/RuqJ/0briv9K647/WOyW/3Lspv+X7Lr/u+zP/9Pq
+        3P/W5t3/w+DS/KXYweOD0K2xYsaYcTy5fzUNnFMOAA8AAQBFCQAAAAAAAAAAAQAAAAEAAAABAAAAAQAA
+        AAEAAAABAAAAAV//uABI6oxrSOuN/0brjf9F7I3/R+yQ/1Ptl/9s7aX/j+64/7Xtzf/T7N3/3uni/87j
+        2f+w3Mj2jtO01WzLoJxMwY1bJ7N0JgCOQQcS/9EAAAkAAAAAAAAAAAABAAAAAQAAAAEAAAABAAAAAQAA
+        AAEAAAABAAAAAQAAAAEAAAABcf/rAEbtkodG7pL1X+6h84jvtv+s7sr/ze3a/+Hr5f3a5+D+vN/P/5HU
+        tv9oyp7xVMSSjji7gUcWrGgZAHgoAwCTQQAAAAAAAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAA
+        AAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEKIhYBRO2UO0TtlD3I79pa6+vqr+/r7NHw7O2c6evpYm3L
+        oYg7vYPaL7p8yC25en8ns3QIJ7FzAAAAAAAAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAA
+        AAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQABAQEDCgYAUlJRAP///wDj4uEO5+fmFsvM
+        ywNbvJAAIKhrBSyzdxovr3YOJYpdAgAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAA
+        AAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAA
+        AAEAAAAAAAAAAQAAAAEAAAABAAAAAAAAAAAAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAA
+        AAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAA
+        AAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAA
+        AAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAA
+        AAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAA
+        AAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAAAAAAAAABwAAABDgAAAgGAAAIA
+        MAAEAAbACAAAEBAAABAQAAAAIAAACEAAAAgAAAAEgAAABAAAAAAAAAACAAAAAgAAAAEAAAABAAAAAQAA
+        AAAAAAAAeAAAAAMAAAABAAADAQAAOAEAAYAAAAwAAOIAAAAIwAAAAAAAAAAAACgAAAAwAAAAYAAAAAEA
+        IAAAAAAAACQAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAA
+        AAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAA
+        AAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAA
+        AAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAA
+        AAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAA
+        AAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAA
+        AAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAA
+        AAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAA
+        AAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAA
+        AAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAA
+        AAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAA
+        AAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAA
+        AAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAA
+        AAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAA
+        AAEAAAABiomIApOSkQMAAAAAAAAAAAAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAA
+        AAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAA
+        AAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAA
+        AAEAAAABAAAAAQAAAAGlpKIFu7m4cMC/vqTCwL9hwL69I6yrqgW+vLsAAAAAAAAAAAEAAAABAAAAAQAA
+        AAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAA
+        AAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAA
+        AAEAAAABAAAAAQAAAAEAAAABAAAAAf///wC5uLZUvLu58MLAv//EwsH8xcPC38bFxKPHxcRaxMLBH6in
+        pgO6uLcAAAAAAAAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAA
+        AAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAA
+        AAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAAB////ALq5tyu8u7nWw8LB/8nIx//GxMP/xsTD/8fG
+        xf/Jx8b6ysnI28vKyZzLyslSx8bFGqWkpAKpqKcAAAAAAAAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAA
+        AAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAA
+        AAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAH///8Aubi2EL28uq3DwsD/3t3c/+Tj
+        4v/d3Nv/1dPS/87My//Lycj/y8rJ/8zLyv/OzMv5z87N1dDPzpTQz85Ly8rJFqempQGhoKAAAAAAAAAA
+        AAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAA
+        AAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAGfnp0Cvr27fMHA
+        vvzY19b/5+bl/+bl5P/o5+b/6Ofm/+bl5P/g397/2dfX/9LR0P/Qzs3/0M/O/9HQz//T0tH31NPS0NXU
+        043V1NNFzs3ME4yMjAGQj44AAAAAAAAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAA
+        AAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAf//
+        /wDAvr1LwcC+7NHQz//m5eX/5ubk/+fm5P/e4+T/4ebl/+ro5v/p6ej/6uno/+jn5v/j4uH/3Nva/9fW
+        1f/V09L/1dTT/9bV1P/Y19b02djXytrZ2IXa2dg/0dDPD359fQCOjY0AAAAAAAAAAAEAAAABAAAAAAAA
+        AAAAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAA
+        AAEAAAAB////AMC+vSXCwL/PzMrJ/+Tj4v/n5uX/6Obl/6jS4f89u/D/Scb0/7je6//t6ef/6+nn/+3q
+        6P/s6+r/6+vq/+rp6f/m5eT/4N/e/9va2f/a2Nf/2tnY/9va2f/d3Nvy3t3cxN7d3H3c29o41NPSDKLg
+        qQAopDkHLbM+KCqyPlkcoToaWv+vAAAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAA
+        AAEAAAABAAAAAQAAAAEAAAAAvbu6DMPCwKTIx8b/4N/e/+fm5f/n5uX/6eXk/43S4v9K1/7/I8b//23N
+        8/+31uP/YsLr/3/T7v/a5+r/7ezq//Dt6//x7ev/7u3s/+zs6//p6Of/5OPi/+Df3v/e3dz/397d/9/e
+        3f/g3t7wyNjIoDG2Qmsttj+vLbY/5CmyPvsTmTlnMehTAAAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAA
+        AAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAF3dnUBxMPBcsfFxPna2dj/5+fm/+fm5f/j5OT/0ODm/8/f
+        4f/I5ej/oOLv/77g5/9ey+j/FMP//we3//+P1PL/4ebo/6PU6f+p3u3/5Ozt/+/u7f/x7+7/8fDv/+/u
+        7f/r6+r/5uXl/+Lh4P/i3+D/pdGq/S+2Qf0ttj//LbY//zC2Q/8qok+2AG8sCwAAAAAAAAABAAAAAQAA
+        AAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAf///wDFw8JDx8XE59XU0v/m5uX/5+fm/+Pk
+        5P9zyOX/JLn4/0DE9v/A3ur/7+nm/+ro5v/A3eH/lub1/1vY9/+x3+z/iNHl/xa9+/8PuP7/jdb0/+/t
+        7P/U5uz/3+3u//Hw7//x8fD/8fHw//Dw7//w7O7/oNSm/y22P/8ttj//LbY//ze5R/9at3XuDYxEOQ/L
+        XQAAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAAB////AMXDwh/IxsXH0M/O/+Xk
+        4//n5+b/6ejm/+Hj4v991un/Ttr//xLD//+S1vD/ptLl/1bD8P9+0u7/1+Pm/+Tp6f/w7er/u93j/4jk
+        9/9M1fr/mNrw/4/T6v8luvj/P8X6/9Hp8v/z8fD/8fHw//Py8v/g7OH/Zshz/yu2Pv8ttj//LbY//zO4
+        RP+Ax5H/LJxchv///wAAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAAAwL69CcnH
+        xpvOzMv/4eDf/+jn5v/o5+b/4eTl/8je5f/L3+L/xuTo/6ri7P/O4ub/Vsvr/yrK//8TvP7/rNzw/97l
+        6f+m1+r/uuDq/97m5//b6uv/6uvq/4/Z6f9c3P//J8b8/73j8v/08vD/8vHx/+Tt5P9zy37/LLY+/y22
+        P/8ttj//LbY//y62QP+X0aD/Uq160AB/KBgc/80AAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAA
+        AAEAAAAAysjHac3Lyvfc29r/6Ofm/+jn5v/m5uX/d8vm/yq++f8+xPj/xODr//Hr6P/o6Of/x+Dj/7Ho
+        8f+E3vP/z+Xq/3DM6P8dvvz/Jr78/7nh8f/h6Ov/uuLu/8rj6P/O5+r/wuft/+vw8P/z8fH/5+7n/3vO
+        hv8ttj//LbY//y22P/8ttj//LbZA/yy2P/+Z06D/gsGe+QSPQFUQwl0AAAAAAQAAAAEAAAABAAAAAQAA
+        AAEAAAABAAAAAf///wDLycg7zcvK4tjX1v/n5+b/6Ojn/+vp5//o5uT/odnk/4Lj+v9G0Pr/td7s/6rV
+        5/9axfH/ddDx/9Xj6f/w7Or/7uzq/7Ld5P+R5vj/XNf5/7Tf7P9Yxuz/ELn8/zvD+v/a6vH/9fHw//Lx
+        8f/r7+r/hdGP/y+4Qv8tt0D/LrhB/y+4Qv8vuUP/L7lD/y25Qv+P0Zj/tdbD/x+bVaUAciQFAAAAAQAA
+        AAEAAAABAAAAAQAAAAEAAAAB////AMrIxxrOzMvA1dPS/+Xk5P/o6Of/6Ofm/63U5P9wx+v/lNXq/9Xk
+        5//Z6On/5+jm/3fR6f9S1v//Kcf9/6/e8P+s1+n/ZMjw/4jU8P/Z5un/5+3s/+fr6f+Q2+r/aN/8/0/S
+        +P/V6vD/8/Lx/+3w7P+P1Zn/M7tH/y+6RP8wu0X/MbtG/zG8R/8xvEf/MrxI/y+8Rv+E0I//2+Te/0Or
+        ceQAjj4rGPV6AAAAAAEAAAABAAAAAQAAAAEAAAAAwL6+B8/NzJHT0dD/4uHg/+jo5//p6Of/3+Pj/1jK
+        6v8pyv//FL3+/63c7//e5Of/o9Tp/6LY5v/H5uv/v+bt/93n6P9n0Oz/UdT//yjF/f+54e//otXr/3LO
+        8P+p3Oz/3enq/+Ht7f/x8fD/7/Hu/5nZo/83vk3/Mb1I/zO+Sf8zvkr/M75K/zS/S/80v0z/NMBM/zLA
+        Sv960Yn/6ejo/3W/lv8KlUlzF9luAAAAAAEAAAABAAAAAQAAAAH///8A0M7NX9PQz/Th393/6uno/+np
+        6P/p6ej/5+fn/8rg4/+x5vD/id3x/9Hk6f98zeX/L8X8/yrC/f+i2vH/3ubq/7Te7f+74Oj/yuru/7zp
+        8f/J4uf/RMvz/y/J//86x/z/4e3x//Py8P/x8fD/o92t/zzCU/8zwEv/NcBN/zXBTv81wU7/NsJP/zbC
+        UP82w1D/N8NR/zTDT/9y0YT/6ejn/63Vv/8cnVfBCpFIDwAAAAAAAAABAAAAAQAAAAHOzMsr09HP2MnL
+        0P+xwtL/y9Ha/+Df4v/q6Of/7evq/+3r6f/q6ef/7Ovp/+3r6v/B3+T/qefz/33e9v+04Ov/YMnr/zbG
+        /f8+xfv/0uXt/83f5/+y3uz/ueLq/7Xn7/+05vH/7vDw//Lx8f+s4LX/QsVa/zXCT/83w1H/N8RS/zfE
+        Uv84xVP/OMVU/zjGVP85xlX/OcdV/zfGVP9q0n//5Ofj/9fk3P88q2/zDJdMQxzWcgAAAAABAAAAAQAA
+        AAHRz81Lz83P9HSwz/9F0ef/WMzf/2+80f+Hvdb/qcfb/8rV4f/h4ub/7erq//Du7P/w7uz/6urp/+vs
+        6//q6+r/rN3m/5bm9/9y2vb/r9jk/zK97v80xf7/X835/+vu7//08fD/8/Hx/7Xjvv9IyWH/N8VT/znG
+        Vf85x1b/OsdW/zrIV/86yFf/O8hY/zvJWf87yVn/PMpa/zrKWf9k03z/4Ojh/+rp6P9uv5P/EJtRkgxD
+        JwEAAAABAAAAAQAAAAHi0sgTor/RgSy15fI96v7/W+vq/7XEaP+qy3b/hsmh/3DEwP9vwNP/hcLb/6fL
+        4P/J2eX/4uXp/+/t7f/z8O//8e/t/+ns6//t7+7/3+vs/6fr+P+S6f3/i+D4/+zw8P/z8fL/vubG/07N
+        aP85yFf/O8lZ/zvKWf88ylr/PMpb/zzLW/89y1z/Pcxd/z3MXf8+zV7/Ps1f/zzNXv9d1Hj/3unf/+vo
+        6P+n1bz/HaFb2BWcVR80/70AAAAAAQAAAAEj//8AF7PtHRu47t023/3/WN/m/96nMv//rQ///LUU/+2+
+        Jv/Sxkj/rst0/4rLn/9yx8H/b8TW/4LG4P+lz+X/yNzp/+Po7f/x7+//9fLw//Xz8f/v8/L/8fLw//Px
+        8v/G6Mz/VdBw/zvLWv89zF3/Pcxd/z7NXv8+zV//Ps5f/z/OYP8/z2H/P89h/0DQYv9A0GL/QdFj/z/R
+        Y/9Y1nb/2erc/+nm5v/U5Nv/OK1w/BWfV2Ai1ngAAAAAAQAAAAEo//8AE6jlHhiy7d4u1vz/Udjn/96k
+        Rv//rEL//7xh//+vOP//riT//64S//23F//wviL/18ZD/7PLbv+OzJv/dMrB/2/I2f+ByeT/pNHn/8rc
+        6P/k6Oz/8/Hy/83q0/9c1Hj/Pc5e/z/PYf9Az2H/QNBi/0DQY/9B0WP/QdFk/0HSZP9C0mX/QtNm/0LT
+        Zv9D02f/Q9Ro/0LUZ/9U2HX/1OvZ/+jm5v/p6uj/Z7+R/xehWrAal1YIAAAAAAAAAAEi//8AEKPlHhSs
+        7d4nzvz/SdLr/9y0Yf//xG3//9GT///Dd///wnf//7lf//+8Yv//vln//7U1//+1If/+vCH/88Al/9vG
+        P/+6y2j/fc21/0bS8f+M0+r/0enX/2TYgP8/0WL/QdJl/0LSZf9C02b/QtNm/0PUZ/9D1Gj/Q9Vo/0TV
+        af9E1Wr/RNZq/0XWa/9F12v/Rdds/0XYbP9Q2nX/zuvV/+rn5//s6en/odS5/x+mYeoco140LPiQAAAA
+        AAEb//8ADZ3lHhCl7d4fxPz/Psrr/9fKef//4IL//92P///Zkf//2Zz//9WX///Qkf//0Zf//75t///I
+        gv//yH3//71b///CVv//vTf/urpo/zzj//9y5ub/btuI/0HUZv9D1Wj/RNVp/0TWav9E1mr/RdZr/0XX
+        bP9F12z/Rtht/0bYbf9H2W7/R9lv/0fab/9I2nD/SNtx/0jbcf9P3Hf/xuzQ/+zp6v/o5ub/0OTZ/zav
+        cv8cpWB/N/+yAAAAAAEU//8ACpjlHgue7d4Xuvv/NcLu/87Xj///9Y3///KI///thf//5YD//95////a
+        hf//1YT//819///Ynf//1Zz//9CU///Okv//vmz/uLR7/zbZ//892cP/Rddr/0XYbP9G2G3/Rthu/0fZ
+        bv9H2W//R9pw/0jacP9I23H/SNtx/0nccv9J3HP/Sd1z/0rddP9K3nX/St51/0redv9O33n/vuzL/+7r
+        7P/m5OP/6evp/2G/kP8cp2LKIKNhFGv//wAS//8ABpLkHham8N4txP3/Msj8/1jJ4/970dL/nNi+/77g
+        rP/b6Z7/8O2R//zth///6oD//+V8///def//13n//9N9///Pf///y33/vbmE/zDQ//801cX/SNpw/0jb
+        cf9I23L/Sdxy/0ncc/9J3XP/St10/0redf9K3nX/S992/0vfd/9L33f/TOB4/0zgef9M4Xn/TeF6/03i
+        ev9O4nv/tezG//Dt7v/l5OP/7uvr/5rTtv8iqmf3IqlmTSzchQAAAAAAFJrhDjXE+nRG1P+uS9b/0UvX
+        /+tK1v/7SdT//0vS+/9Rz/P/YM7l/3nR1P+Y18H/ud2t/9fjm//t54z/++aA///hdv//2Wz/u8CG/yfG
+        /v8w0Mf/St50/0redf9L33b/S993/0zgd/9M4Hj/TOF5/03hef9N4Xr/TeJ7/03ie/9N43z/TeN8/03j
+        ff9N5H7/TeR+/03kf/9M5X//q+zA//Hv7//m5eT/6ujo/8vk1/81snX/IqtonR2KVQQAAAABAAAAAQAA
+        AAA8sdQFSc70FVHW+y9Y2/1TXt/+fWPi/6hm5P/NZ+T/6WTi//pg3///W9n9/1vU9v9l0ej/eNDW/5PT
+        wP+22Kn/l8Op/xy7/v8qy8v/TeF6/03iev9N4nv/TeJ7/03jfP9N433/TeN9/03kfv9N5H7/TeR//03l
+        f/9M5YD/TOWB/0zmgf9M5oL/TOaC/0vmg/9I54L/n+y7//Lw8f/n5uX/5uXk/+fs6f9cwJD/Iqxp3iWr
+        aisAAAABAAAAAQAAAAEAAAABAAAAAAAAAAAsYm8Anv//AFO60QRk2fISbuT7LHbp/U997f55d+3j0Hnv
+        4/9/8PT/fu/9/3fq//9u4v7/Xtf6/znJ//81zs7/TeR+/03kfv9N5H//TeWA/0zlgP9M5YH/TOaB/0zm
+        gv9M5oL/S+aD/0vnhP9L54T/S+eF/0rohf9I6IX/SOiF/0vpiP9V6Y7/pezA/+/t7f/n5uX/6OXl//Lv
+        7/+S0rP/Jq9t/CevbXoAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAAAAAAAAErd
+        dwApuTAATuN/nVHlhf9X55L/Yuuk/3Hwuv+C9tD/j/rk/4j24f9Z6KD/S+aB/0vmg/9L5oP/S+eE/0vn
+        hP9L54X/SuiG/0rohv9K6If/SeiH/0jph/9H6Yf/SemJ/1Pqj/9o65z/iOqv/6vqxP/L6db/4+jk/+rp
+        6P/g6OP/yuPW/6raw/VvyJ3TKbFwmieubkgAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAA
+        AAEAAAABAAAAAQAAAAFEzXQITOWBt0zmgf9L5oH/SuaB/0rmgf9L54T/UOiL/1Hpjf9K6IX/SuiG/0ro
+        h/9K6If/SumI/0npif9J6Yn/SOqJ/0bqif9H6or/T+uP/2Psm/+B7K3/pevB/8bq1P/f6eH/6+np/+np
+        6P/X5t7/uN7M/pLUte1tyZ7CTL6JhS2ydEYRpF8YHI9ZAgAAAAAAAAABAAAAAQAAAAEAAAABAAAAAQAA
+        AAEAAAABAAAAAQAAAAEAAAABAAAAAf///wBH3X8SS+eFzkrohv9K6Ib/SuiH/0rph/9K6Yj/SemI/0np
+        if9J6or/SeqK/0jqi/9H6ov/RuuL/0bri/9M7JD/Xeya/3rtq/+e7b//wevS/9vq4P/q6ej/7enq/+Ho
+        5P/G4tX/otm/+3vOqOFZxJOvPLqAbyGwbjQFm1EOACoAAABSGQAAAAAAAAAAAQAAAAEAAAABAAAAAQAA
+        AAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAYv//wBH5IYiSemJ4Unqiv9J6or/SeqL/0jr
+        jP9I64z/SOuN/0frjf9F7I3/ReyN/0nskP9Y7Zn/c+6p/5fuvP+77dD/1+vf/+jq5//u6er/6eno/9Tl
+        3f+y3sr/i9Sz9WbJndNIwIqaL7h6WhmuaiQBkkkHE//nAAAWBAAAAAAAAAAAAQAAAAEAAAABAAAAAQAA
+        AAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAWn/zgBH6Yw2SOuN8Ejs
+        jv9H7I7/R+yP/0Xsj/9E7Y//R+2R/1TumP9t7qf/kO+6/7Xuzv/T7d7/5uvn/+7q6//t6ur/3+jj/8Li
+        0/+b2Lz+dM6l7VPEksI6vYOFKLZ3RhWsaBgAgD8DA51VAAAAAAAAAAABAAAAAQAAAAEAAAABAAAAAQAA
+        AAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAV7/
+        wQBG65BORu2R+kbukv9H7pP/UO6Y/2bvpf+I77f/ru/L/8/u3P/j7Ob/7Orq/+/q6//n6ef/0uXc/6/d
+        yP+C0a3/XceY6UPAiK8wunxvIrRzNBOnZQ4ARxUAAWU0AAAAAAAAAAABAAAAAQAAAAEAAAABAAAAAQAA
+        AAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAA
+        AAEAAAABAAAAAV7/yQBF7pRgRe+V2ELvk6WJ77m2yPDa9OHu5v3r6+r/7erq/+zq6v3s6+rq2Ofg2ZjX
+        uvhpy5//R8GL/zW8gP8vunz9LLl6cACLSwQ39KUAACAQAAAAAAAAAAABAAAAAQAAAAEAAAABAAAAAQAA
+        AAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAA
+        AAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAABC55EYQ+mSHAC5TgP58PQk8uvtTero6K/t7OvW7u7toe/v
+        7mTt7uwvhs6uGy65fHkvunzaMLp90DK7fq4yun56Mbd8FWH/9AAAAAABAAAAAQAAAAEAAAABAAAAAQAA
+        AAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAA
+        AAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAAAAAAEAAAAB////AO3t
+        7BPr6+oa0tPSA+Xl5AAAAAAAM8GCAC6rcwQwtXoaMLN4FCufawUAAAAAAAAAAQAAAAEAAAABAAAAAQAA
+        AAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAA
+        AAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAA
+        AAEAAAABAAAAAQAAAAEAAAAAAAAAAQAAAAEAAAABAAAAAQAAAAEAAAAAAAAAAAAAAAEAAAABAAAAAQAA
+        AAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAA
+        AAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAA
+        AAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAA
+        AAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAA
+        AAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAA
+        AAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAA
+        AAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAA
+        AAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAA
+        AAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAA
+        AAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAA
+        AAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAA
+        AAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAA
+        AAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAA
+        AAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAA
+        AAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABgAAAAAAAAAAwAAAAAAAAEAYAAAAAAAAg
+        AMAAAAAAAEAAGAAAAAAAAAADAAAAAACAAADmAAAAAQAAABCAAAACAAAAAIAAAAAAAAAAQAAABAAAAABA
+        AAAIAAAAAEAAABAAAAAAIAAAEAAAAAAgAAAgAAAAAAAAAEAAAAAAEAAAgAAAAAAQAACAAAAAAAgAAAAA
+        AAAACAAAAAAAAAAAAAAAAAAAAAQAAIAAAAAABAAAgAAAAAACAACAAAAAAAIAAIAAAAAAAgAAgAAAAAAB
+        AACAAAAAAAEAAIAAAAAAAAAAIAAAAAAAAAAPAAAAAAAAAAB4AAAAAAAAAAAAAAABAAAAEAAAABwAAAAQ
+        AAAA4AAAABAAAAYAAAAAEAAAcAAAAAAQAAOAAAAAABAABAAAAAAABI4QAAAAAAAAIMAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>j</value>
+  </data>
+  <data name="&gt;&gt;düzenleToolStripMenuItem.Name" xml:space="preserve">
+    <value>düzenleToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;düzenleToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dataSet4Payment1.Name" xml:space="preserve">
+    <value>dataSet4Payment1</value>
+  </data>
+  <data name="&gt;&gt;dataSet4Payment1.Type" xml:space="preserve">
+    <value>Fatura_Kayıt_Sistemi.Data.DataSet4Payment, Data.DataSet4Payment.Designer.cs.dll, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>Fatura_Dokum</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+</root>
